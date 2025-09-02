@@ -15,8 +15,8 @@ public class PlanFunerario {
 
     @Override
     public String toString(){
-        return "Paquete funerario" + "Ataud" + ataud + "Ceremonia" + ceremonia + "Flores" + flores
-                + "Transporte" + transporte + "Cremacion" + cremacion;
+        return "Paquete funerario" +  " " + ataud + " " + "Ceremonia" + " " +  ceremonia + " " +  "Flores" + " " + flores + " " +
+                "Transporte" + " " + transporte +  " " + "Cremacion" + ":" + cremacion;
     }
     public static class Builder{
         private PlanFunerario plan;

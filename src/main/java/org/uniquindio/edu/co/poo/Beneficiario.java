@@ -1,5 +1,6 @@
 package org.uniquindio.edu.co.poo;
 
-public class Beneficiario {
+public class Beneficiario extends Titular {
+    private String parentesco;
 
 }
