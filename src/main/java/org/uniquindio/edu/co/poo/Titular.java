@@ -10,8 +10,8 @@ public class Titular extends Persona {
     private List<Beneficiario> listBeneficiarios;
     private String key;
 
-    public Titular(String nombre, String apellido, LocalDate fechaNacimiento, String telefono, String correo, boolean planActivo) {
-        super(nombre,apellido,fechaNacimiento,telefono,correo);
+    public Titular(String nombre, String apellido, LocalDate fechaNacimiento, String telefono, String correo, boolean planActivo, String id) {
+        super(nombre,apellido,fechaNacimiento,telefono,correo,id);
         this.planActivo = true;
         this.listPlanfunerario = new ArrayList<>();
 
@@ -22,6 +22,8 @@ public class Titular extends Persona {
     public void setListaBeneficiarios(List<Beneficiario> ListBeneficiarios){this.listBeneficiarios=listBeneficiarios;}
     public String getKey(){return key;}
     public void setKey(String key){this.key =key;}
+    public String getId(){return id;}
+
 
 
 }

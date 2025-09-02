@@ -9,13 +9,20 @@ public class Persona {
     private String direccion;
     private String telefono;
     private String correo;
-    public Persona(String nombre, String apellido, LocalDate fechaNacimiento, String telefono, String correo) {
+    private String id;
+
+    public Persona(String nombre, String apellido, LocalDate fechaNacimiento, String telefono, String correo, String id) {
        this.nombre = nombre;
        this.apellido=apellido;
        this.fechaNacimiento = fechaNacimiento;
        this.telefono = telefono;
        this.correo = correo;
+       this.direccion = direccion;
+       this.id=id;
+
     }
+
+
 
 
 
