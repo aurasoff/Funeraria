@@ -21,6 +21,14 @@ public class Persona {
        this.id=id;
 
     }
+    public String getNombre() { return nombre; }
+    public String getApellido() { return apellido; }
+    public LocalDate getFechaNacimiento() { return fechaNacimiento; }
+    public String getDireccion() { return direccion; }
+    public String getTelefono() { return telefono; }
+    public String getCorreo() { return correo; }
+    public String getId() { return id; }
+
 
 
 

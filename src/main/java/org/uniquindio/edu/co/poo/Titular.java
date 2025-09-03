@@ -6,24 +6,54 @@ import java.util.List;
 
 public class Titular extends Persona {
     private boolean planActivo;
-    private List<PlanFunerario> listPlanfunerario;
+    private PlanFunerario planFunerario;
     private List<Beneficiario> listBeneficiarios;
     private String key;
+    private String id;
+
 
     public Titular(String nombre, String apellido, LocalDate fechaNacimiento, String telefono, String correo, boolean planActivo, String id) {
-        super(nombre,apellido,fechaNacimiento,telefono,correo,id);
+        super(nombre, apellido, fechaNacimiento, telefono, correo, id);
         this.planActivo = true;
-        this.listPlanfunerario = new ArrayList<>();
-
+        this.id = id;
+        this.listBeneficiarios = new ArrayList<>();
     }
-    public List<PlanFunerario> getListPlanFunerario(){return listPlanfunerario;}
-    public void setListPlanfunerario (List<PlanFunerario> listPlanfunerario){this.listPlanfunerario = listPlanfunerario;}
-    public List<Beneficiario> getListaBeneficiarios(){return listBeneficiarios;}
-    public void setListaBeneficiarios(List<Beneficiario> ListBeneficiarios){this.listBeneficiarios=listBeneficiarios;}
-    public String getKey(){return key;}
-    public void setKey(String key){this.key =key;}
-    public String getId(){return id;}
+
+    public void setPlanFunerario(PlanFunerario planFunerario) {
+        this.planFunerario = planFunerario;
+        this.planActivo = true;
+    }
+
+    public List<Beneficiario> getListaBeneficiarios() {
+        return listBeneficiarios;
+    }
+    public boolean isPlanActivo() {
+        return planActivo;
+    }
+
+    public void setListaBeneficiarios(List<Beneficiario> ListBeneficiarios) {
+        this.listBeneficiarios = listBeneficiarios;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public String getId() {
+        return id;
+    }
+    public PlanFunerario getPlanFunerario(){
+        return planFunerario;
+    }
+    public void agregarBeneficiario(Beneficiario b){
+        listBeneficiarios.add(b);
+    }
+    public List<Beneficiario> getListBeneficiarios(){
+        return listBeneficiarios;
+    }
 
 
+    public void setKey(String password) {this.key=key;
+    }
 
 }

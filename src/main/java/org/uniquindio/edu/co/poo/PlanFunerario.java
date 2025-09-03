@@ -19,15 +19,15 @@ public class PlanFunerario {
                 "Transporte" + " " + transporte +  " " + "Cremacion" + ":" + cremacion;
     }
     public static class Builder{
-        private PlanFunerario plan;
+        private PlanFunerario planFunerario;
 
-        public Builder(){this.plan = new PlanFunerario();}
-        public Builder ataud(String ataud){plan.setAtaud(ataud);return this;}
-        public Builder ceremonia(String ceremonia){plan.setCeremonia(ceremonia); return this;}
-        public Builder flores(String flores){plan.setFlores(flores); return this;}
-        public Builder transporte(boolean transporte){plan.setTransporte(transporte); return this;}
-        public Builder cremacion(boolean cremacion){plan.setCremacion(cremacion); return this;}
-        public PlanFunerario build(){return plan;}
+        public Builder(){this.planFunerario = new PlanFunerario();}
+        public Builder ataud(String ataud){planFunerario.setAtaud(ataud);return this;}
+        public Builder ceremonia(String ceremonia){planFunerario.setCeremonia(ceremonia); return this;}
+        public Builder flores(String flores){planFunerario.setFlores(flores); return this;}
+        public Builder transporte(boolean transporte){planFunerario.setTransporte(transporte); return this;}
+        public Builder cremacion(boolean cremacion){planFunerario.setCremacion(cremacion); return this;}
+        public PlanFunerario build(){return planFunerario;}
     }
 }
 
